@@ -1,0 +1,17 @@
+GRIP HAPPENS 1.0.1 - POST-INSTALL VERIFICATION HOTFIX
+
+- Fixes a release-blocking report-builder error that could make a successful Apply end with
+  "The resulting game settings could not be verified."
+- Restores the full Workspace implementation in the packaged runtime.
+- Adds a regression check requiring VerifiedConfiguration to be constructed as its own statement.
+- Gameplay tuning and the Recommended executable image are unchanged from 1.0.0.
+
+GRIP HAPPENS 1.0.0 - FIRST PUBLIC RELEASE
+
+- Recommended setup: tyre wear, Moderate wet-tarmac tuning, 1.50x collision health loss,
+  progressive engine/gearbox consequences, damage-sensitive suspension geometry,
+  native brake wear, critical failures, and 0.50x routine engine-use wear.
+- Player-adjustable presets and bounded numeric tuning with per-section Reset controls.
+- Play ACR button with fresh file verification and Steam Offline Mode requirement.
+- Read-only damage snapshots and driving recordings with Stop & save and Reset recording.
+- Verified original-file backups, transactional Apply/Restore, and Emergency Restore.

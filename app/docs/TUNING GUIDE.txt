@@ -1,0 +1,144 @@
+﻿TUNING WITHOUT GUESSWORK
+
+Recommended is the tested public gameplay setup, not a guaranteed real-world component lifespan.
+Custom numbers are pending until Apply. Section Reset restores only that section to
+Recommended. Original-game choices and Recovery are different actions.
+
+RateScale: Controls tread consumption. Higher values use tyres faster; zero restores the
+original disabled consumption setting for this supported build. Native worn-tyre grip is
+retained. No fixed tyre lifetime is promised.
+
+WetTarmac: Reduces the wet-tarmac loss coefficient. More reduction makes this part of
+wet-road grip loss gentler, not that percentage more grip. Dry-road grip and tyre slip
+curves are unchanged.
+
+VisualDamage: Scales body-deformation input. A higher value can make dents more visible;
+it does not multiply crash forces or mechanical health loss. Stock preserves ordinary
+body damage.
+
+CollisionDamage: Scales health loss from eligible contacts. Higher values are more
+punishing; they do not increase impact forces. Recommended uses a separate 1.50x
+override, shown beneath the preset.
+
+TyreDamage: Enables native compression-related tyre damage. This is a processing switch,
+not a puncture chance or a guarantee that every hit punctures a tyre. Other native
+conditions remain in control.
+
+MechanicalFailures: Determines how early a damaged component becomes eligible for the
+native failure checks. Higher health thresholds permit checks after less damage. An 85%
+threshold is NOT an 85% failure chance.
+
+BrakeWear: Enables the native disc and pad consumption routine. Native temperatures,
+braking forces and material limits determine the amount. No duplicate brake-fade penalty
+is added.
+
+Detachment: Scales break thresholds for authored breakable attachments. Smaller factors
+allow earlier separation; unbreakable parts remain unbreakable. This is not restricted
+to cosmetic panels.
+
+CriticalDamage: Allows eligible collision and mechanical failures to reach the native
+Critical state. It does not add fixed health loss or a random failure chance. Severe
+damage can end a run.
+
+CoolingRouting: Adds approximate engine-bay impact coverage when a cooling socket is
+missing. Dedicated sockets take precedence. Optional modeled heat is a different control
+under Engine and turbo response; it is not a native coolant-leak simulation.
+
+EngineImpact: Weights collision damage reaching the Engine part. Higher values make
+engine hits more consequential; they do not directly multiply horsepower loss. It
+interacts with collision scaling and native health limits.
+
+PowerResponse: Makes existing engine/turbo damage affect performance before complete
+failure. Caps never increase the original response. Tune numbers contains separate
+optional cooling and routine engine-wear controls; each is described independently.
+
+WheelImpact: Distributes impact effects by distance to eligible wheel hubs. Bending and
+optional toe/camber changes use actual wheel damage, without inventing controller
+steering. Unequal damage can cause pull; symmetric damage need not pull to one side.
+
+GearboxDamage: Enables grinding, engine-hit transfer and progressively reluctant
+shifting. Recommended preserves healthy shifts and the softened internal-life response.
+Severe component damage can still prevent shifts. Stress measures actual coupled
+over-rev exposure, not a fixed penalty per paddle press.
+
+Tyre consumption coefficient [1e-05 to 0.1 x]: Higher means faster tread consumption.
+Overrides the selected coefficient, not a fixed lifetime or an extra grip penalty.
+
+Wet-tarmac grip-loss coefficient [0 to 1.5 x]: Smaller means less wet-tarmac loss from
+this coefficient. 1.00 retains stock; this is not a measured grip multiplier.
+
+Deformation input [0.25 to 3 x]: Higher amplifies deformation input. Native limits
+remain; it does not directly scale mechanical damage.
+
+Collision health loss [0.1 to 5 x]: Higher scales eligible collision health loss.
+Recommended is 1.50x. Contact geometry and clamping still matter.
+
+Engine collision weighting [0.1 to 8 x]: Higher increases Engine-only collision
+weighting. Recommended keeps 4.00x. Does not alter routine wear.
+
+Engine response health divisor [0.1 to 1 fraction]: Remaining-health fraction below
+which the extra engine cap acts. Higher begins performance loss earlier; it does not
+change health.
+
+Turbo response health divisor [0.1 to 1 fraction]: Remaining-health fraction below which
+the extra turbo cap acts. Higher starts the cap earlier; not measured boost.
+
+Engine-hit transfer to gearbox [0 to 1 fraction]: Share of actual engine collision
+health-fraction loss transferred to the gearbox. 0.50 means half. Wear and repairs do
+not transfer.
+
+Native grinding damage rate [0 to 5 x]: Higher increases native grinding-wear input.
+Clean shifts are not charged a fixed penalty.
+
+Maximum added engagement time [0 to 3 seconds]: Higher adds delay to damaged ordinary
+shifts. Healthy shifts retain native timing.
+
+Minimum failed-shift recovery [0 to 5 seconds]: Minimum pause after a rejected damaged
+shift, in seconds. Higher makes rapid retries less effective; longer native waits
+remain.
+
+Coupled over-rev exposure [0 to 1 s/rev]: Higher increases gearbox stress from actual
+coupled downshift over-rev. Recommended keeps 0.12. No penalty merely for requesting a
+downshift.
+
+Damage-only steering deformation [0 to 6 x]: Higher amplifies only native damage-related
+steering-joint displacement. It does not move the steering input.
+
+Boosted deformation limit [0 to 0.05 native units]: Upper size of the added bending
+amplification, in native length units. Existing larger native damage is not reduced.
+
+Native gearbox wear affects shifting [0 to 1 enabled]: Lets internal gearbox life
+contribute to shift difficulty using the softened response. Healthy timing stays normal;
+component damage remains separate.
+
+Differential zero-rate fallback [0 to 0.0001 native rate]: Fallback only when the
+authored differential wear rate is zero. Higher increases eligible material use.
+Existing nonzero rates and material limits remain.
+
+Damage-sensitive added toe [0 to 3 degrees]: Maximum added toe angle, scaled by each
+wheel damage level. Higher can increase damaged-car scrub or instability; it is not a
+fixed steering pull.
+
+Cooling damage and modeled overheating [0 to 1 enabled]: Enables the added
+damage-sensitive cooling/heat model. Temperature is modeled, not native coolant
+telemetry. No fluid-leak simulation is claimed.
+
+Cooling efficiency health divisor [0.1 to 1 fraction]: Health fraction used by the
+cooling-efficiency cap. Higher can reduce cooling efficiency earlier after damage; it
+does not change impact health loss.
+
+Modeled overheat wear exposure [0 to 5 x]: Higher scales added engine-wear exposure when
+the model overheats. Zero removes this added heat penalty, not native over-rev or
+collision damage.
+
+Keep dashboard damage warnings in sync [0 to 1 enabled]: Makes dashboard warnings
+reflect operational engine/gearbox degradation. Critical can mean currently unusable,
+not necessarily permanently destroyed. No extra damage is added.
+
+Damage-sensitive added camber [0 to 5 degrees]: Maximum added camber angle, scaled per
+wheel and mirrored by side. Higher strengthens geometry consequences without
+steering-input injection.
+
+Routine engine-use wear [0 to 2 x native use wear]: Multiplies only routine Engine-use
+wear. Recommended is 0.50x. Zero does not prevent collision, over-rev, boost, thermal
+damage or other failure paths.

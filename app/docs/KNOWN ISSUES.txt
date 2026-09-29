@@ -1,0 +1,12 @@
+﻿KNOWN ISSUES - 1.0.1
+
+- Grip Happens supports one exact ACR file set. Unknown game updates or unrelated edits are
+  refused instead of being forced.
+- The release is unsigned. Windows reputation/security policy may warn or block it. Do not
+  disable security protections globally.
+- Steam Offline Mode plus the retained game-local guards are not a proof of complete network
+  isolation or prevention of later cached-result submission. Use local, noncompetitive play.
+- Modeled cooling temperature is not native coolant telemetry or a fluid-leak simulation.
+- Some advanced numeric values are gameplay tuning controls, not real-world engineering units.
+- A read-only snapshot/recording can end early if ACR restarts, changes cars, closes, or its
+  memory becomes unavailable; captured data are retained when possible.

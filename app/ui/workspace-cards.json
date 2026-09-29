@@ -1,0 +1,72 @@
+[
+  {
+    "Key": "RateScale",
+    "Control": "Wear",
+    "Title": "Tyre wear"
+  },
+  {
+    "Key": "WetTarmac",
+    "Control": "Wet",
+    "Title": "Wet tarmac"
+  },
+  {
+    "Key": "TyreDamage",
+    "Control": "TyreDamage",
+    "Title": "Puncture and tyre-impact system"
+  },
+  {
+    "Key": "CollisionDamage",
+    "Control": "Collision",
+    "Title": "Collision health loss"
+  },
+  {
+    "Key": "VisualDamage",
+    "Control": "Visual",
+    "Title": "Body deformation"
+  },
+  {
+    "Key": "CriticalDamage",
+    "Control": "Critical",
+    "Title": "Critical failures"
+  },
+  {
+    "Key": "MechanicalFailures",
+    "Control": "Failures",
+    "Title": "Failure eligibility"
+  },
+  {
+    "Key": "Detachment",
+    "Control": "Detach",
+    "Title": "Detachable parts"
+  },
+  {
+    "Key": "EngineImpact",
+    "Control": "Engine",
+    "Title": "Engine impact weighting"
+  },
+  {
+    "Key": "PowerResponse",
+    "Control": "Power",
+    "Title": "Engine and turbo response"
+  },
+  {
+    "Key": "CoolingRouting",
+    "Control": "Cooling",
+    "Title": "Cooling collision routing"
+  },
+  {
+    "Key": "GearboxDamage",
+    "Control": "Gearbox",
+    "Title": "Gearbox damage and shifting"
+  },
+  {
+    "Key": "WheelImpact",
+    "Control": "WheelImpact",
+    "Title": "Suspension damage"
+  },
+  {
+    "Key": "BrakeWear",
+    "Control": "Brake",
+    "Title": "Brake disc and pad wear"
+  }
+]

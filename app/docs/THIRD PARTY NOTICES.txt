@@ -1,0 +1,24 @@
+﻿LICENSING / RUNTIME DEPENDENCIES
+
+Original launcher, installer, support and UI source remains covered by the existing
+LICENSE.txt. That license excludes game-derived interoperability metadata. Assetto Corsa
+Rally and its game code/assets remain the property of their respective owners.
+
+The player runtime uses Windows PowerShell, .NET Framework/WPF and Windows APIs already
+installed on the machine. No Python distribution, compiler, third-party runtime DLL,
+font, original/prepatched game executable, game asset container or user recording is
+included in the public package.
+
+The authenticated runtime-native.bin is a generated catalogue of state hashes, choice
+codes and patch-table indices, not a copy of the game executable. Necessary byte
+signatures and patch metadata remain interoperability data and are not licensed as our
+original game content.
+
+Developer-only source may reference optional development libraries such as Unicorn,
+Keystone, Capstone and pefile. Their implementations are not vendored in either
+distributable produced here; obtain them under their own licenses if using those
+research tests. Their licenses do not grant rights to the game.
+
+No mod host or publisher permission is inferred from the above. Selection of a
+distribution host and confirmation of its executable-patching policy remain owner
+release gates. The package is unsigned; no certificate or signing key is shipped.

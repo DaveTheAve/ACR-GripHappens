@@ -1,0 +1,15 @@
+﻿PRIVACY AND SUPPORT
+
+Grip Happens has no account system and uploads nothing automatically.
+
+Advanced -> Preview support report shows the complete sanitized JSON before you save it.
+The sanitized report excludes usernames, local paths, Steam IDs, saves, raw logs, memory
+snapshots and game files. Damage snapshots/driving recordings are separate diagnostics and
+contain more game-state detail; share those only when you intentionally choose to.
+
+Support page:
+https://buymeacoffee.com/davethegeek
+
+When reporting a problem, include Grip Happens 1.0.1, the exact error text, and the sanitized
+support report when relevant. Unsupported ACR builds should be left untouched rather than
+forced.

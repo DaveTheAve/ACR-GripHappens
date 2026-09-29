@@ -1,0 +1,364 @@
+{
+  "Schema": 1,
+  "Version": "1.0.1",
+  "OriginalLength": 198338400,
+  "RawOffset": 198338560,
+  "CodeRVA": 202649600,
+  "DataRVA": 202657792,
+  "CodeLength": 8192,
+  "DataLength": 4096,
+  "NewLength": 198350848,
+  "HeaderPatches": [
+    {
+      "Name": "Gameplay section count",
+      "Offset": 606,
+      "Length": 2,
+      "Original": "0a00",
+      "Enabled": "0c00"
+    },
+    {
+      "Name": "Gameplay image size",
+      "Offset": 680,
+      "Length": 4,
+      "Original": "0030140c",
+      "Enabled": "0060140c"
+    },
+    {
+      "Name": "Gameplay code size",
+      "Offset": 628,
+      "Length": 4,
+      "Original": "00448808",
+      "Enabled": "00648808"
+    },
+    {
+      "Name": "Gameplay initialized data size",
+      "Offset": 632,
+      "Length": 4,
+      "Original": "00ee8703",
+      "Enabled": "00fe8703"
+    },
+    {
+      "Name": "Gameplay section headers",
+      "Offset": 1264,
+      "Length": 80,
+      "Original": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "Enabled": "2e67683137630000002000000030140c002000000068d20b000000000000000000000000200000602e67683137640000001000000050140c001000000088d20b000000000000000000000000400000c0"
+    }
+  ],
+  "Entries": [
+    {
+      "Feature": "GearboxProgression",
+      "Name": "Gear duration up",
+      "Offset": 83111817,
+      "RVA": 83114377,
+      "Length": 8,
+      "Bytes": "e8f2f91f07909090",
+      "Original": "f30f108398050000",
+      "NativePatchName": "Worn upshift duration entry"
+    },
+    {
+      "Feature": "GearboxProgression",
+      "Name": "Gear duration down",
+      "Offset": 83111576,
+      "RVA": 83114136,
+      "Length": 8,
+      "Bytes": "e803fb1f07909090",
+      "Original": "f30f10869c050000",
+      "NativePatchName": "Worn downshift duration entry"
+    },
+    {
+      "Feature": "GearboxProgression",
+      "Name": "Gear commit up",
+      "Offset": 83111974,
+      "RVA": 83114534,
+      "Length": 6,
+      "Bytes": "e8d5f91f0790",
+      "Original": "89872c010000",
+      "NativePatchName": "Deferred upshift commit entry"
+    },
+    {
+      "Feature": "GearboxProgression",
+      "Name": "Gear commit down",
+      "Offset": 83111698,
+      "RVA": 83114258,
+      "Length": 6,
+      "Bytes": "e869fb1f0790",
+      "Original": "ff8f2c010000",
+      "NativePatchName": "Deferred downshift commit entry"
+    },
+    {
+      "Feature": "GearboxProgression",
+      "Name": "Gear direct dispatch",
+      "Offset": 83114712,
+      "RVA": 83117272,
+      "Length": 35,
+      "Bytes": "e823f01f0784c00f848500000083b934010000000f8580010000909090909090909090",
+      "Original": "3bd87e0af30f108698050000eb08f30f10869c05000083b934010000000f8577010000",
+      "NativePatchName": "Gearbox timed-request entry"
+    },
+    {
+      "Feature": "GearboxProgression",
+      "Name": "Native-life admission 0",
+      "Offset": 83116344,
+      "RVA": 83118904,
+      "Length": 9,
+      "Bytes": "e9c3e41f0790909090",
+      "Original": "f3410f108260120000",
+      "NativePatchName": "Native-life admission 0 entry"
+    },
+    {
+      "Feature": "GearboxProgression",
+      "Name": "Native-life admission 256",
+      "Offset": 83116426,
+      "RVA": 83118986,
+      "Length": 9,
+      "Bytes": "e971e51f0790909090",
+      "Original": "f3410f108260120000",
+      "NativePatchName": "Native-life admission 256 entry"
+    },
+    {
+      "Feature": "DifferentialWearRate",
+      "Name": "Differential material rate",
+      "Offset": 83118708,
+      "RVA": 83121268,
+      "Length": 6,
+      "Bytes": "e987e21f0790",
+      "Original": "f3410f595248",
+      "NativePatchName": "Differential material rate entry"
+    },
+    {
+      "Feature": "SuspensionAlignmentDegrees",
+      "Name": "Damage-sensitive physical toe",
+      "Offset": 83040940,
+      "RVA": 83043500,
+      "Length": 8,
+      "Bytes": "e84f1e2107909090",
+      "Original": "4c8d9c24d0010000",
+      "NativePatchName": "Damage-sensitive physical toe entry"
+    },
+    {
+      "Feature": "CoolingConsequences",
+      "Name": "Cooling efficiency response",
+      "Offset": 99327142,
+      "RVA": 99329702,
+      "Length": 9,
+      "Bytes": "e85592280690909090",
+      "Original": "488b030f28c8488bcb",
+      "NativePatchName": "Progressive power response entry"
+    },
+    {
+      "Feature": "CoolingConsequences",
+      "Name": "Cooling thermal integration",
+      "Offset": 83149761,
+      "RVA": 83152321,
+      "Length": 7,
+      "Bytes": "e83a6e1f079090",
+      "Original": "c7477c0000803f",
+      "NativePatchName": "Cooling thermal integration entry"
+    },
+    {
+      "Feature": "HudDamageWarnings",
+      "Name": "HUD native aggregation entry",
+      "NativePatchName": "HUD native aggregation entry",
+      "Offset": 103672484,
+      "RVA": 103675044,
+      "Length": 37,
+      "Bytes": "e8574ae605eb1e909090909090909090909090909090909090909090909090909090909090",
+      "Original": "488bc84863803001000085c078153b81c80000007d0d48c1e005480381c0000000eb0233c0"
+    },
+    {
+      "Feature": "HudDamageWarnings",
+      "Name": "HUD reflected aggregation entry",
+      "NativePatchName": "HUD reflected aggregation entry",
+      "Offset": 103698692,
+      "RVA": 103701252,
+      "Length": 37,
+      "Bytes": "e8f7e3e505eb1e909090909090909090909090909090909090909090909090909090909090",
+      "Original": "488bc84863803001000085c078153b81c80000007d0d48c1e005480381c0000000eb0233c0"
+    },
+    {
+      "Feature": "HudDamageWarnings",
+      "Name": "HUD warning refresh entry",
+      "NativePatchName": "HUD warning refresh entry",
+      "Offset": 103620750,
+      "RVA": 103623310,
+      "Length": 9,
+      "Bytes": "e86d1be70584c07422",
+      "Original": "80bbb8030000007422"
+    },
+    {
+      "Feature": "EngineUseWearScale",
+      "Name": "Engine routine-use wear entry",
+      "NativePatchName": "Engine routine-use wear entry",
+      "Offset": 99331405,
+      "RVA": 99333965,
+      "Length": 9,
+      "Bytes": "e8ae80280690909090",
+      "Original": "f3410f598e68090000"
+    }
+  ],
+  "Symbols": {
+    "gear-duration": {
+      "RVA": 202650112,
+      "Length": 199
+    },
+    "gear-duration-up": {
+      "RVA": 202650496,
+      "Length": 21
+    },
+    "gear-duration-down": {
+      "RVA": 202650528,
+      "Length": 21
+    },
+    "gear-commit-up": {
+      "RVA": 202650624,
+      "Length": 107
+    },
+    "gear-commit-down": {
+      "RVA": 202650752,
+      "Length": 107
+    },
+    "gear-direct": {
+      "RVA": 202650880,
+      "Length": 396
+    },
+    "gear-admission-0": {
+      "RVA": 202649600,
+      "Length": 120
+    },
+    "gear-admission-256": {
+      "RVA": 202649856,
+      "Length": 120
+    },
+    "differential-zero-rate": {
+      "RVA": 202651392,
+      "Length": 31
+    },
+    "damage-alignment": {
+      "RVA": 202654464,
+      "Length": 701
+    },
+    "cooling-efficiency-cap": {
+      "RVA": 202651904,
+      "Length": 390
+    },
+    "cooling-thermal-step": {
+      "RVA": 202652672,
+      "Length": 699
+    },
+    "engine-operational-feedback": {
+      "RVA": 202657280,
+      "Length": 378
+    }
+  },
+  "CodeSHA256": "6b8aac9956134d649c93c8c564d105a759a25d140f7c5bff33154470dbee071c",
+  "CodeHex": "f3410f1082601200004180ba401200000074604180ba402c0000007456418b926012000085d2784b81fa0000807f7343418b92c005000085d27e3881fa0000807f7330418b912001000085d2782581fa0000807f731d660f6ed2f3410f5e92c0050000f30f5d15991b0000f30f51d2f30f5dc2e9c91ae0f8ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccf3410f1082601200004180ba401200000074604180ba402c0000007456418b926012000085d2784b81fa0000807f7343418b92c005000085d27e3881fa0000807f7330418b912001000085d2782581fa0000807f731d660f6ed2f3410f5e92c0050000f30f5d15991a0000f30f51d2f30f5dc2e91b1ae0f8cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc4c8b97f00000004180ba40120000000f84b10000004180ba402c0000000f84a3000000458b9a601200004585db0f88930000004181fb0000807f0f838600000066410f6ecb458b9ac00500004585db7e3c4181fb0000807f7333448b9f200100004585db78274181fb0000807f731e66410f6ed3f3410f5e92c0050000f30f5d157f190000f30f51d2f30f5dca66410f7ecb4181fb0000803f732b66410f7ec34585db78214181fb000070427718f30f10154e190000f30f5cd1f30f591546190000f30f58c2c3cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc4c8b97f0000000f3410f108298050000e96bfeffffcccccccccccccccccccccc4c8b97f0000000f3410f10829c050000e94bfeffffcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc4c8b97f00000004180ba401200000074534180ba402c0000007449458b9a601200004585db783d4181fb0000803f72334181fb0000807f732b458b9ac00500004585db7e1f4181fb0000807f7316448b9f200100004585db780a453b9ac00500007301c389872c010000c3cccccccccccccccccccccccccccccccccccccccccc4c8b97f00000004180ba401200000074534180ba402c0000007449458b9a601200004585db783d4181fb0000803f72334181fb0000807f732b458b9ac00500004585db7e1f4181fb0000807f7316448b9f200100004585db780a453b9ac00500007301c3ff8f2c010000c3cccccccccccccccccccccccccccccccccccccccccc4889f94c8b97f00000004180ba40120000000f84810000004180ba402c0000007477458b9a601200004585db786b4181fb0000807f736266410f6ecb458b9ac00500004585db7e3c4181fb0000807f7333448b9f200100004585db78274181fb0000807f731e66410f6ed3f3410f5e92c0050000f30f5d1588160000f30f51d2f30f5dca66410f7ecb4181fb0000803f7307b801000000eb10410fb6821d28000085c00f84e20000003b9f2c0100007e0bf3410f108298050000eb09f3410f10829c0500004c8b97f00000004180ba40120000000f84b10000004180ba402c0000000f84a3000000458b9a601200004585db0f88930000004181fb0000807f0f838600000066410f6ecb458b9ac00500004585db7e3c4181fb0000807f7333448b9f200100004585db78274181fb0000807f731e66410f6ed3f3410f5e92c0050000f30f5d15ba150000f30f51d2f30f5dca66410f7ecb4181fb0000803f732b66410f7ec34585db78214181fb000070427718f30f101589150000f30f5cd1f30f591581150000f30f58c2c3cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc41837a4800750df30f5915fd140000e9661de0f8f3410f595248e95b1de0f8cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc4889d90f28c8488b03488d1530f7d6f9483990f00200000f85610100004c8b83c80000004d85c00f845101000083bbd000000010740e83bbd0000000137456e93a01000049b952006100640069004d39080f852701000049b9610074006f0072004d3948080f851301000049b94500660066004d004d3948100f85ff00000049b975006c00740000004d3948180f85eb000000eb6b49b949006e00740065004d39080f85d600000049b9720063006f006f004d3948080f85c200000049b96c006500720045004d3948100f85ae00000049b9660066004d0075004d3948180f859a000000418178206c0074000f858c0000006641837824000f8580000000eb00488b53284885d27475f30f1092b8000000f30f10823401000066410f7ed14585c97e5b4181f90000807f735266410f7ec14181e1ffffff7f4181f90000807f733d66410f7ec94181e1ffffff7f4181f90000807f7328f30f5f05a2110000f30f5dc2f30f5ec2f30f5e05a6110000f30f5d058e110000f30f5dc8488b03c30f28c1e982fabbf4cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc4c8b0f4180b940120000000f84a50200004180b9402c0000000f8497020000f30f104c2438660f7ec885c00f8e850200003dcdcccc3d0f877a020000418b815812000085c00f886b0200003d0000807f0f83600200008b864802000085c00f8e520200003d0000807f0f83470200004c8d5ff84c8d158613000041b8200000004d391a741d49833a00750931c0f04d0fb11a74264983c22041ffc875e3e9140200004d394a087512418b42103d0000c84172073d0000344376244d894a0841c742100000b44241c742140000000041c742180000000041c7421c0000000041ff4218f3410f109158120000f30f5d15110f00000f2e155e0f00000f83a6010000f3410f104210f30f105f400f541d4e0f0000660f7ed83d0000807f0f83950100000f2e1d2c0f00007253f30f5e9e48020000f30f5d1d120f0000f3410f10a920130000660f7ee825ffffff7f3d0000807f0f835f010000f30f5f2da10e0000f30f5d2d9d0e0000f30f59ddf30f591dcd0e0000f30f581dc10e0000eb030f57dbf2410f10a120180000f20f59e4f2410f10a930180000f20f59edf20f58e5f20f51e4f20f5ae4660f7ee03d0000807f0f8301010000f30f5d25930e0000f30f5925830e0000f30f5825770e0000f30f59e20f28e8f30f5c2d4c0e0000f30f5e2d480e0000f30f5f2d140e0000f30f5d2d100e0000f30f59e50f28e8f30f5c2d210e0000f30f5f2df50d0000f30f59e5f30f5cdcf30f59d9f30f58c3f30f5f05010e0000f30f5d05050e0000f3410f11421041c7421c01000000f30f5c05f30d00000f2e05b80d0000766cf30f5905e60d0000f30f5905be0d0000f30f59c1418b81d412000085c0784d3d0000807f73460f28e8f3410f58a9d4120000660f7ee83d0000807f732ff3410f11a9d4120000f3410f584214f3410f11421441c7421c03000000eb1041c742100000b44241c7421c00000000e9450f0000cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc4c8b53084180ba40120000000f84a20200004180ba402c0000000f84940200008b4b1083f9030f8788020000418b948a8012000085d20f8e7802000081fa0000807f0f836c020000660f6ec2f30f5d05b0080000f30f5905b4080000f30f5ac0f20f590598090000f6c101741349ba000000000000008066490f6eca660f57c1660f28c8f20f59c9f20f101578090000f20f59d1f20f581574090000f20f59d1f20f581570090000f20f59d1f20f58156c090000f20f59d0f20f101d68090000f20f59d9f20f581d64090000f20f59d9f20f581d60090000f20f59d9f20f581d3c090000f20f1000f20f104840660f28e0660f28e9f20f59e3f20f59eaf20f5ce5f20f59c2f20f59cbf20f58c1f20f1120f20f114040f20f104008f20f104848660f28e0660f28e9f20f59e3f20f59eaf20f5ce5f20f59c2f20f59cbf20f58c1f20f116008f20f114048f20f104010f20f104850660f28e0660f28e9f20f59e3f20f59eaf20f5ce5f20f59c2f20f59cbf20f58c1f20f116010f20f114050660f6ec2f30f5d057a070000f30f5905de070000f30f5ac0f20f590562080000f6c101751349ba000000000000008066490f6eca660f57c1660f28c8f20f59c9f20f101542080000f20f59d1f20f58153e080000f20f59d1f20f58153a080000f20f59d1f20f581536080000f20f59d0f20f101d32080000f20f59d9f20f581d2e080000f20f59d9f20f581d2a080000f20f59d9f20f581d06080000f20f1000f20f104820660f28e0660f28e9f20f59e3f20f59eaf20f5ce5f20f59c2f20f59cbf20f58c1f20f1120f20f114020f20f104008f20f104828660f28e0660f28e9f20f59e3f20f59eaf20f5ce5f20f59c2f20f59cbf20f58c1f20f116008f20f114028f20f104010f20f104830660f28e0660f28e9f20f59e3f20f59eaf20f5ce5f20f59c2f20f59cbf20f58c1f20f116010f20f1140304c8d9c24d8010000c3cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc000000000000803f0000c03fbd3786350000c03f6666663f0000803fcdcccc3d0000b4420000c8410000b0420000c040000034430000e6428988883d9a99193ecdcccc3f0ad7a33c6f12833a0000c03f0000f0420000a04158ff7f3fccccccccffffff7fffffff7fffffff7fffffff7f0000204000000000cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc399d52a246df913f1aa0011aa0012abf111111111111813f555555555555c5bf000000000000f03f176cc1166cc156bf555555555555a53f000000000000e0bfcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc6666263f0000003fcdcc4c3e0000c03f00004844cccccccccccccccccccccccc474832302d4f5053544154452d303031cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc833d6dfeffff000f84650100004c8b0f4d85c90f84590100004c398fe80000000f854c0100004180b940120000000f843e0100004180b9402c0000000f8430010000f30f104c2438660f7ec885c00f8e1e0100003dcdcccc3d0f87130100004c8d159a05000041b82000000049393a741d49833a00750931c0f0490fb13a74144983c22041ffc875e3e9e40000004d394a0874144d894a0849c742100000000049c742180000000041ff42188b47404189421c25ffffff7f3d0000807f0f83a7000000660f6ec0418b814412000085c00f88940000003d6666263f0f83890000008b47143d0000c842727f3d00409c457778660f6ed0f30f5f15b2feffff0f2ec2736741837a14017468418b81201300003d0000003f72483d0000803f774183bf2401000001740d8b87440100003dcdcc4c3e772bf3410f104210f30f58c1f30f5d0565fefffff3410f1142100f2e0558feffff721c41c7421401000000eb1241c7421000000000eb0849c7421000000000c7477c0000803fc3cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "CoolingFallbackOffset": 2690,
+  "CoolingFallbackNextRVA": 202652294,
+  "ConstantOffsets": {
+    "GearboxEngagementGain": 7176,
+    "DifferentialWearRate": 7180,
+    "SuspensionAlignmentDegrees": 7184,
+    "SuspensionCamberDegrees": 7280,
+    "CoolingHealthThreshold": 7188,
+    "CoolingStressRate": 7192
+  },
+  "FeatureKeys": [
+    "GearboxProgression",
+    "DifferentialWearRate",
+    "SuspensionAlignmentDegrees",
+    "SuspensionCamberDegrees",
+    "CoolingConsequences",
+    "HudDamageWarnings",
+    "EngineUseWearScale"
+  ],
+  "ThermalStateSlots": 32,
+  "ThermalStateStride": 32,
+  "HudDisplay": {
+    "Schema": 1,
+    "OriginalSHA256": "42c359b0cd24774a86441710fdc7d7db3bc06b57b3ff30cb9ea5d56fb71448fb",
+    "LegacyCodeSHA256": "6b8aac9956134d649c93c8c564d105a759a25d140f7c5bff33154470dbee071c",
+    "Entries": [
+      {
+        "Name": "HUD native aggregation entry",
+        "RVA": 103675044,
+        "Offset": 103672484,
+        "Original": "488bc84863803001000085c078153b81c80000007d0d48c1e005480381c0000000eb0233c0",
+        "Enabled": "e8574ae605eb1e909090909090909090909090909090909090909090909090909090909090",
+        "Length": 37
+      },
+      {
+        "Name": "HUD reflected aggregation entry",
+        "RVA": 103701252,
+        "Offset": 103698692,
+        "Original": "488bc84863803001000085c078153b81c80000007d0d48c1e005480381c0000000eb0233c0",
+        "Enabled": "e8f7e3e505eb1e909090909090909090909090909090909090909090909090909090909090",
+        "Length": 37
+      },
+      {
+        "Name": "HUD warning refresh entry",
+        "RVA": 103623310,
+        "Offset": 103620750,
+        "Original": "80bbb8030000007422",
+        "Enabled": "e86d1be70584c07422",
+        "Length": 9
+      }
+    ],
+    "CodeSpans": [
+      {
+        "Offset": 3840,
+        "Bytes": "4989c24531db4885c00f84c60200004863903001000085d20f88b70200003b90c80000000f8dab0200004c8b98c00000004d85db0f849b02000048c1e2054901d341807b08040f838502000041f64208100f857a02000041837a5c000f856f020000418b4258c1e8103d002000000f835d020000488d15057b13ff488b54c2104885d20f8448020000410fb742583dfbff00000f8738020000488d14420fb702a8010f8529020000c1e80683f806744283f8070f8518020000488b420248b9ffffffffffffff004821c848b920202020202020004809c848b967656172626f78004839c80f85e701000041b801000000eb34488b420248b9ffffffffffff00004821c848b920202020202000004809c848b9656e67696e6500004839c80f85ae0100004531c0498b52204885d20f849e010000488b52204885d20f8491010000488b8a800500004885c90f8481010000f6c1070f857801000080b940120000000f846b01000080b9402c0000000f845e0100004585c07570f30f108144120000488b91c02800004885d20f84db000000488b124885d20f84cf0000004883c20848390a0f85c2000000488d055013000041b920000000483910751f483948080f85a6000000837814010f859c00000041b904000000e9e20000004883c02041ffc975d3e983000000f30f108160120000660f7ec085c00f88d50000003d0000807f0f83ca000000833da208000000745b488b91c02800004885d2744f488b124885d2744748398af0000000753e8b81c005000085c07e343d0000807f732d8b822001000085c078233d0000807f731c660f6ec8f30f5e89c0050000f30f5d0d3d080000f30f51c9f30f5dc1660f7ec085c0785e3d0000807f73574531c985c0750841b904000000eb3341b9010000000f2e050e080000732441b9020000000f2e0503080000731541b9030000000f2e05f8070000730641b904000000453a4b08760f488d053707000049c1e1054c01c8c34c89d8c3488d0524070000c3"
+      },
+      {
+        "Offset": 5632,
+        "Bytes": "4883ec6880bbb8030000000f84ef00000080bbd1030000000f84e20000008b83c803000085c00f8ed40000003d800000000f87c90000003983cc0300000f8cbd000000488b93c00300004885d20f84ad000000f6c2070f85a4000000488954242089442430c744242800000000c74424380000000048c7442440000000008b4c242848c1e10348034c2420e870be58f584c074348b4c242848c1e10348034c2420e85a9358f54885c0741d4889442440e84bf8ffff4885c0740e0fb640083b442438760489442438ff4424288b4424283b44243072a8488b5424404885d274208b4424383a83d003000074144889d941b8ffffffff41b9ffffffffe850ad19fa8a83b80300004883c468c3"
+      },
+      {
+        "Offset": 6400,
+        "Bytes": "00000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000"
+      },
+      {
+        "Offset": 6560,
+        "Bytes": "0000803fa4707d3f6666263f3333b33e00000000"
+      },
+      {
+        "Offset": 6592,
+        "Bytes": "0104010004c20000"
+      }
+    ],
+    "MapperRVA": 202653440,
+    "MapperLength": 733,
+    "TickRVA": 202655232,
+    "TickLength": 267,
+    "UnwindRVA": 202656192,
+    "GearboxFlagOffset": 6576,
+    "ExceptionTableFileOffset": 186807808,
+    "OriginalExceptionSize": 7365876,
+    "ExceptionSizeOffset": 764,
+    "PdataVirtualSizeOffset": 992,
+    "ExtraRuntimeFileOffset": 194173732,
+    "ExtraRuntimeOriginal": "000000000000000000000000",
+    "Meaning": "Presentation only: preserve native Critical; warn below0.99 control, Light below0.99, Severe below0.65, Critical below0.35 usable control. No health, torque, RNG, wear or shift-timing writes."
+  },
+  "OperationalFeedback": {
+    "RVA": 202657280,
+    "StateRVA": 202658816,
+    "Stride": 32,
+    "Slots": 32,
+    "EnabledOffset": 7284,
+    "MinimumDemandSeconds": 1.5,
+    "RunningFloorRpm": 800,
+    "Meaning": "Observation only: damaged engine remains below max(native restart threshold,800 RPM) for1.5s while throttle is requested in neutral or with the clutch disengaged. Resets on recovery or repaired damage.",
+    "EntryBytes": "e83a801f079090",
+    "EntryOffset": 83149761
+  },
+  "EngineUseWear": {
+    "Offset": 2048,
+    "Bytes": "f3410f598e68090000f64608100f8583000000837e5c00757d448b565841c1ea104181fa00200000736c4c8d1d4f8213ff4f8b5cd3104d85db745b440fb756584181fafbff0000774d4f8d1c53450fb71341f6c201753f41c1ea064183fa0675354d8b530249bbffffffffffff00004d21da49bb20202020202000004d09da49bb656e67696e6500004d39da7508f30f590d5a000000c3",
+    "ConstantOffset": 2288,
+    "Min": 0,
+    "Max": 2,
+    "Default": 1,
+    "Scope": "Engine instance only; native routine-use term before owner wear multiplier. Turbo, overspeed and collision terms unchanged."
+  }
+}

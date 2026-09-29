@@ -1,0 +1,19 @@
+﻿INSTALL / REMOVE / GAME UPDATES
+
+INSTALL
+Extract the complete ZIP. Open Run Grip Happens.cmd, choose Recommended, close ACR, then
+Review & apply. Originals are verified and backed up before the first write.
+
+PLAY
+Put Steam in Offline Mode yourself. Play ACR performs a fresh read-only file check before it
+hands the fixed ACR app ID to Steam.
+
+REMOVE
+Advanced -> Restore original game files, or use Emergency Restore.cmd if the interface will
+not open. Saves are not deleted. Backups are retained.
+
+GAME UPDATES
+Grip Happens authenticates the supported executable, container index and targeted content
+regions. If ACR updates or unrelated edits are present, Apply/Restore refuses unsafe writes.
+Do not copy old backups over a newer game build. Use Steam's file-integrity verification if
+the supported original state cannot be safely established.

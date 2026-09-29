@@ -1,0 +1,228 @@
+{
+  "Tool": "GripHappens",
+  "Version": "1.0.1",
+  "Files": [
+    {
+      "Path": "Collect-ACR-DamageState.ps1",
+      "Length": 51567,
+      "SHA256": "785a6045973b4d4a0df5f3878871f55f9491b6f65580e3db9418c9b4349e1214"
+    },
+    {
+      "Path": "compatibility.json",
+      "Length": 1096,
+      "SHA256": "1e66727c62d92170346559c19543f53c149040b0dd74539d45723f92016b7ae6"
+    },
+    {
+      "Path": "custom-tuning.json",
+      "Length": 15599,
+      "SHA256": "a92977e450a9141e7c9c296aaeeb22de9fb4d1a7b1309317727c985db57ff85f"
+    },
+    {
+      "Path": "docs/INSTALL REMOVE AND UPDATES.txt",
+      "Length": 868,
+      "SHA256": "7a14f68b4d71f2ca6daa114fcf8f8b26b307a9d5b0ea236386a8ebb021f3932e"
+    },
+    {
+      "Path": "docs/KNOWN ISSUES.txt",
+      "Length": 832,
+      "SHA256": "2e5c48eb3bd314581b978394502d317ee6ad61dedc9a4ceff4f335437aca7e70"
+    },
+    {
+      "Path": "docs/PRIVACY AND SUPPORT.txt",
+      "Length": 707,
+      "SHA256": "4a7955a7e609238677ca8ca4e2205ce605d3da8ff23c1dc431c9ba404011092f"
+    },
+    {
+      "Path": "docs/THIRD PARTY NOTICES.txt",
+      "Length": 1436,
+      "SHA256": "6abfe39b5b5fd7c892bb721d65e6c5c9e520498a3c9d7257a21fbde34aee2da0"
+    },
+    {
+      "Path": "docs/TUNING GUIDE.txt",
+      "Length": 7627,
+      "SHA256": "75007d843dff3c855f013a30f8d782f688b1b2901897f3abd9ed9ccc97e4ae65"
+    },
+    {
+      "Path": "gameplay-layout.json",
+      "Length": 30053,
+      "SHA256": "f52934a0bfc092dd89f3e1ba537804e969b03cc6950517307488828579a59d32"
+    },
+    {
+      "Path": "Grip-Happens.Core.ps1",
+      "Length": 36787,
+      "SHA256": "3bfea58734a6f856dd0f72557400d53deca8af1d07f0eb1eb15a500786596303"
+    },
+    {
+      "Path": "Invoke-ACR-DesktopTask.ps1",
+      "Length": 12778,
+      "SHA256": "3ae3e8406073892964aff78a7762aa82d6ccbbf297780986a9f945ee1c56dbb8"
+    },
+    {
+      "Path": "modules/ACR.Common.psm1",
+      "Length": 33128,
+      "SHA256": "b3fc25df2bae4981bd1444010fde573dc7d22b2ed34137ed5b82931ab7c47e7f"
+    },
+    {
+      "Path": "modules/ACR.Custom.psm1",
+      "Length": 18351,
+      "SHA256": "e607e2801a9e1b8b0eedaa37cceb3cdb368430c739348b1b0197c3e382ccf482"
+    },
+    {
+      "Path": "modules/ACR.Desktop.psm1",
+      "Length": 27936,
+      "SHA256": "e44f8aa6ed5185743948b6008950c4f2bc1438f45c2924cccf386e328783ea18"
+    },
+    {
+      "Path": "modules/ACR.Gameplay.psm1",
+      "Length": 8586,
+      "SHA256": "e4c1ffc6b6b0cedb4ae42342901a52dcf0769434731de63472046495d88ee07f"
+    },
+    {
+      "Path": "modules/ACR.Play.psm1",
+      "Length": 8362,
+      "SHA256": "b0f3657e27b55e166fe812a08a6c6fef272193c0ca7894107c5910aab2d94016"
+    },
+    {
+      "Path": "modules/ACR.Player.psm1",
+      "Length": 3852,
+      "SHA256": "1d090406e2061bb4c7c00eb372b655cd44ea4d7bc586a6d6f8abd5ca41e5c9fd"
+    },
+    {
+      "Path": "modules/ACR.Recording.psm1",
+      "Length": 10488,
+      "SHA256": "9f8b81a60d5aaa657b1d320bd8493cdd07628fe97df2f88806b3dafb5074c47f"
+    },
+    {
+      "Path": "modules/ACR.Support.psm1",
+      "Length": 10944,
+      "SHA256": "fe693fe96d216d6d28dec4c4c049fcb8791e96d683bd9e8add9b798022721458"
+    },
+    {
+      "Path": "modules/ACR.TaskLog.psm1",
+      "Length": 3998,
+      "SHA256": "d44c05e6502f96bbbd14c869060081c83aed6e3861fcea1ee2122214261ed021"
+    },
+    {
+      "Path": "modules/ACR.Theme.psm1",
+      "Length": 7671,
+      "SHA256": "f127ef7fc2117daf4e23dcefbe5cddff59c4a090ae3fef9ca40a38901434682f"
+    },
+    {
+      "Path": "modules/Routing.Coverage.psm1",
+      "Length": 4142,
+      "SHA256": "01e51b8fc7bb5457ad3e4f1dc2ce75806efd9711294f31782c8f064ba380e4d3"
+    },
+    {
+      "Path": "Open-Grip-Happens.ps1",
+      "Length": 29860,
+      "SHA256": "18b4f30e16c30f15605baf9c57aa05dcb380284be8f3409cc59a4db0c6219dbb"
+    },
+    {
+      "Path": "player-help.json",
+      "Length": 6957,
+      "SHA256": "35e5d4bf991b9467cb1a2477ce03e66d613ea8f84445724e38cd6d95d7a4f7ed"
+    },
+    {
+      "Path": "release-metadata.json",
+      "Length": 3184,
+      "SHA256": "80db74e067d177f1f5d538a861c89a80d56b9e6adcdfb5e2016a46b90bf3a89d"
+    },
+    {
+      "Path": "Restore-ACR-Original.ps1",
+      "Length": 5269,
+      "SHA256": "f8b0bf386dbc56dec3d6f43d87c4177f5f4872544c8421cd3d7afa54743efe20"
+    },
+    {
+      "Path": "runtime-manifest.json",
+      "Length": 2403087,
+      "SHA256": "cdbb1c1d823a91030c5e9a731f440c7db8d4038966d1641c86b98943c056b28d"
+    },
+    {
+      "Path": "runtime-native.bin",
+      "Length": 19814902,
+      "SHA256": "b01f676796632e9bd2c41e4270eb0121918b44af3ab7230f0531ec41a6be97c1"
+    },
+    {
+      "Path": "Test-RoutingDecoder.ps1",
+      "Length": 15215,
+      "SHA256": "f7f0718231813e4bc646411cb8e6e32e4d6ae82b1078e4218a88fc8e896cab50"
+    },
+    {
+      "Path": "tests/Test-ACR-InstallSafety.ps1",
+      "Length": 8104,
+      "SHA256": "4ddc262472bb228d94da4a9d92117dd35d2def8e70a61448c13dbdff407e57c5"
+    },
+    {
+      "Path": "tools/ACR_CustomBytes.cs",
+      "Length": 4574,
+      "SHA256": "d2ec476b55546df3f6045cae9412d0e4bd0c0ab6b90194d18b1565e8c36501bb"
+    },
+    {
+      "Path": "tools/ACR_DamageProbe.cs",
+      "Length": 143320,
+      "SHA256": "b751ed657986a43e43198a124fa170055344d6735c87c01141ab86f9237be36d"
+    },
+    {
+      "Path": "ui/Main.xaml",
+      "Length": 61327,
+      "SHA256": "90af2ea0b81bfdd13d3c379f2096ba69f50e512c40a1b62253e5d60667f0b60a"
+    },
+    {
+      "Path": "ui/Play.ps1",
+      "Length": 3434,
+      "SHA256": "caaa1e975c88e2450bb5691652c8d96bd6ddb22d3ee9bdb1eb6bc873b87838c7"
+    },
+    {
+      "Path": "ui/Player.ps1",
+      "Length": 4307,
+      "SHA256": "55900e8b9da04a14658492e532f0d4e8ebf179a8a159191594849c9663d74777"
+    },
+    {
+      "Path": "ui/Recording.ps1",
+      "Length": 3711,
+      "SHA256": "cb220f247ee816713b1cd19dcebf8e245fc3e0f0bb2f7418590c37d1598954c7"
+    },
+    {
+      "Path": "ui/workspace-cards.json",
+      "Length": 1442,
+      "SHA256": "0389f3c27df14180a1e34f9daed90cdd2c639b43b0f0e1dd40e55c3789fe2784"
+    },
+    {
+      "Path": "ui/Workspace.ps1",
+      "Length": 13892,
+      "SHA256": "f53391a63bdd12243772c6517f852a8d9570d0a106c543c48a087a6bf8e047ce"
+    },
+    {
+      "Path": "Verify-Package.ps1",
+      "Length": 2228,
+      "SHA256": "52396c91054f74033279c1c37748750529631c5996b5c0e8f2becd891eae09f6"
+    }
+  ],
+  "RootFiles": [
+    {
+      "Path": "Run Grip Happens.cmd",
+      "Length": 739,
+      "SHA256": "98275f7cab052e3325707ea7964d6a98a17afe08825be4cb9f125d196bf64ffc"
+    },
+    {
+      "Path": "Emergency Restore.cmd",
+      "Length": 722,
+      "SHA256": "2f4cb7c677d0a4d1a37e1bf692dfb048a123c89d69edc8d301e27411b1f8f02a"
+    },
+    {
+      "Path": "README.md",
+      "Length": 2455,
+      "SHA256": "0fd4cee9c41010f78eb82bffdc41c8608bae8dbc3ef81b8dc7d78ffb899600d2"
+    },
+    {
+      "Path": "CHANGELOG.txt",
+      "Length": 1104,
+      "SHA256": "05dc9b992271f74c7d5d3019632109866c9e4b58ea434fab515308977fb68e1a"
+    },
+    {
+      "Path": "LICENSE.txt",
+      "Length": 1460,
+      "SHA256": "9f4ecfe2f5809fff8ba19c3fddca21ae1b9c375860b6fd20434130a32dab7ff6"
+    }
+  ]
+}

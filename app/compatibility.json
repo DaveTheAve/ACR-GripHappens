@@ -1,0 +1,25 @@
+{
+  "Schema": 1,
+  "SupportedFileSet": "ACR-42c359b0",
+  "AppId": "3917090",
+  "Game": "Assetto Corsa Rally",
+  "Windows": "Windows 11 x64; Windows PowerShell 5.1 and installed .NET Framework/WPF",
+  "OriginalExecutable": {
+    "relative_path": "acr/Binaries/Win64/acr.exe",
+    "length": 198338400,
+    "sha256": "42c359b0cd24774a86441710fdc7d7db3bc06b57b3ff30cb9ea5d56fb71448fb"
+  },
+  "OriginalIndex": {
+    "SHA256": "22906c2cef1e59a91a6c18a63c15d8dc9fdc397c68fc895561e0387883e770bd",
+    "Length": 891019
+  },
+  "TargetedContentRegions": 114,
+  "MarketingVersionIsNotAnAuthenticator": true,
+  "WholeContentArchiveHashRequired": false,
+  "UnknownUpdates": "Refuse patch and restore; never overwrite a newer build with old backups. Use Steam file integrity verification when unsupported.",
+  "OfflineOnly": true,
+  "AllNetworkPathsOrCachedResultsIsolated": false,
+  "SigningStatus": "Unsigned; built-in checksums verify package integrity, not publisher identity.",
+  "Release": "1.0.1",
+  "Status": "Supported file set is verified by fingerprints before any write."
+}

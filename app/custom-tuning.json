@@ -1,0 +1,621 @@
+{
+  "Schema": 1,
+  "Version": "1.0.1",
+  "DescriptorOffset": 194174208,
+  "DescriptorLength": 256,
+  "Fields": [
+    {
+      "Key": "WearScale",
+      "Label": "Tyre consumption coefficient",
+      "Group": "RateScale",
+      "Min": 1e-05,
+      "Max": 0.1,
+      "Unit": "x",
+      "Mode": "rate",
+      "Allowed": [],
+      "Slots": [],
+      "Content": "TyreWear",
+      "Defaults": {}
+    },
+    {
+      "Key": "WetLossScale",
+      "Label": "Wet-tarmac grip-loss coefficient",
+      "Group": "WetTarmac",
+      "Min": 0,
+      "Max": 1.5,
+      "Unit": "x",
+      "Mode": "wet_tarmac",
+      "Allowed": [],
+      "Slots": [],
+      "Content": "WetTarmac",
+      "Defaults": {}
+    },
+    {
+      "Key": "VisualScale",
+      "Label": "Deformation input",
+      "Group": "VisualDamage",
+      "Min": 0.25,
+      "Max": 3,
+      "Unit": "x",
+      "Mode": "visual_damage",
+      "Allowed": [
+        "Enhanced",
+        "Strong"
+      ],
+      "Slots": [
+        {
+          "Patch": "visual_damage code/metadata",
+          "BaseSHA256": "9eb5d69a35f731ef0e1c1be5d7c5a8e22901f692a2795a3396929ccb6201a573",
+          "Offsets": [
+            24
+          ]
+        },
+        {
+          "Patch": "visual_damage code/metadata",
+          "BaseSHA256": "11c2cbe87c40b71f6bdce6bda4995b8489adce4c908af7ae61e764d051ecbeef",
+          "Offsets": [
+            24
+          ]
+        }
+      ],
+      "Defaults": {
+        "Enhanced": 1.5,
+        "Strong": 2.0
+      }
+    },
+    {
+      "Key": "CollisionScale",
+      "Label": "Collision health loss",
+      "Group": "CollisionDamage",
+      "Min": 0.1,
+      "Max": 5,
+      "Unit": "x",
+      "Mode": "collision_damage",
+      "Allowed": [
+        "Sensitive",
+        "Strong"
+      ],
+      "Slots": [
+        {
+          "Patch": "collision_damage code/metadata",
+          "BaseSHA256": "7cb9f6ffe7a31386003518d19b9d5a1cbb1e0b4944753aa13cf68f015360e281",
+          "Offsets": [
+            24
+          ]
+        },
+        {
+          "Patch": "collision_damage code/metadata",
+          "BaseSHA256": "f47b1ce01a5d59bb79f7c1718fcc777dcf1456916cfcb3692ad1c8faf8a490ff",
+          "Offsets": [
+            24
+          ]
+        }
+      ],
+      "Defaults": {
+        "Sensitive": 2.0,
+        "Strong": 3.0
+      }
+    },
+    {
+      "Key": "EngineImpactFactor",
+      "Label": "Engine collision weighting",
+      "Group": "EngineImpact",
+      "Min": 0.1,
+      "Max": 8,
+      "Unit": "x",
+      "Mode": "engine_impact",
+      "Allowed": [
+        "Matched"
+      ],
+      "Slots": [
+        {
+          "Patch": "Collision repair leaf routines",
+          "BaseSHA256": "3dbcccf2e43b8735d78533568bbd3d3034faa1d543bbd03c3c77c2a323810d3a",
+          "Offsets": [
+            600
+          ]
+        }
+      ],
+      "Defaults": {
+        "Matched": 4.0
+      }
+    },
+    {
+      "Key": "EngineResponseThreshold",
+      "Label": "Engine response health divisor",
+      "Group": "PowerResponse",
+      "Min": 0.1,
+      "Max": 1,
+      "Unit": "fraction",
+      "Mode": "power_response",
+      "Allowed": [
+        "Progressive"
+      ],
+      "Slots": [
+        {
+          "Patch": "Progressive response leaf helpers",
+          "BaseSHA256": "cf2252c25e57cdd266cdb8739e3fe9b954725c7eb1ec05daf55f53f68d6e3366",
+          "Offsets": [
+            147
+          ]
+        },
+        {
+          "Patch": "Progressive response leaf helpers",
+          "BaseSHA256": "dfa9317430460b21db7c3b54a795a15850fe6d499dee9083d54e3a0e1b21b929",
+          "Offsets": [
+            147
+          ]
+        },
+        {
+          "Patch": "Progressive response leaf helpers",
+          "BaseSHA256": "45df77199e4bf272c50131a1e7b3b90ff9899f4d4870763bfe51ac477df9c2d0",
+          "Offsets": [
+            147
+          ]
+        }
+      ],
+      "Defaults": {
+        "Progressive": 0.85
+      }
+    },
+    {
+      "Key": "TurboResponseThreshold",
+      "Label": "Turbo response health divisor",
+      "Group": "PowerResponse",
+      "Min": 0.1,
+      "Max": 1,
+      "Unit": "fraction",
+      "Mode": "power_response",
+      "Allowed": [
+        "Progressive"
+      ],
+      "Slots": [
+        {
+          "Patch": "Progressive response leaf helpers",
+          "BaseSHA256": "cf2252c25e57cdd266cdb8739e3fe9b954725c7eb1ec05daf55f53f68d6e3366",
+          "Offsets": [
+            239
+          ]
+        },
+        {
+          "Patch": "Progressive response leaf helpers",
+          "BaseSHA256": "dfa9317430460b21db7c3b54a795a15850fe6d499dee9083d54e3a0e1b21b929",
+          "Offsets": [
+            239
+          ]
+        },
+        {
+          "Patch": "Progressive response leaf helpers",
+          "BaseSHA256": "45df77199e4bf272c50131a1e7b3b90ff9899f4d4870763bfe51ac477df9c2d0",
+          "Offsets": [
+            239
+          ]
+        }
+      ],
+      "Defaults": {
+        "Progressive": 0.7
+      }
+    },
+    {
+      "Key": "GearboxImpactFraction",
+      "Label": "Engine-hit transfer to gearbox",
+      "Group": "GearboxDamage",
+      "Min": 0,
+      "Max": 1,
+      "Unit": "fraction",
+      "Mode": "gearbox_damage",
+      "Allowed": [
+        "Impact",
+        "Responsive",
+        "Mechanical",
+        "Engagement",
+        "Consequences"
+      ],
+      "Slots": [
+        {
+          "Patch": "Gearbox leaf helpers and unwind",
+          "BaseSHA256": "10fe6a4104f0dc3159ba9b704de9e925c7b3c03c966d4cebfa42e2bf43d72725",
+          "Offsets": [
+            1676
+          ]
+        },
+        {
+          "Patch": "Gearbox leaf helpers and unwind",
+          "BaseSHA256": "b2a7e080328132b6b074cb8de77507ca669d62abcc166a1674aa67b92662b8aa",
+          "Offsets": [
+            1676
+          ]
+        },
+        {
+          "Patch": "Gearbox leaf helpers and unwind",
+          "BaseSHA256": "0d14ec928fb33ea7a4aa1b56c3a1c5762b50dee5f176ed68754cfaac195d5786",
+          "Offsets": [
+            1676
+          ]
+        }
+      ],
+      "Defaults": {
+        "Impact": 0.5,
+        "Responsive": 0.5,
+        "Mechanical": 0.5,
+        "Engagement": 0.5,
+        "Consequences": 0.5
+      }
+    },
+    {
+      "Key": "GearboxGrindingRate",
+      "Label": "Native grinding damage rate",
+      "Group": "GearboxDamage",
+      "Min": 0,
+      "Max": 5,
+      "Unit": "x",
+      "Mode": "gearbox_damage",
+      "Allowed": [
+        "Grinding",
+        "Impact",
+        "Responsive",
+        "Mechanical",
+        "Engagement",
+        "Consequences"
+      ],
+      "Slots": [
+        {
+          "Patch": "Gearbox leaf helpers and unwind",
+          "BaseSHA256": "10fe6a4104f0dc3159ba9b704de9e925c7b3c03c966d4cebfa42e2bf43d72725",
+          "Offsets": [
+            1672
+          ]
+        },
+        {
+          "Patch": "Gearbox leaf helpers and unwind",
+          "BaseSHA256": "b2a7e080328132b6b074cb8de77507ca669d62abcc166a1674aa67b92662b8aa",
+          "Offsets": [
+            1672
+          ]
+        },
+        {
+          "Patch": "Gearbox leaf helpers and unwind",
+          "BaseSHA256": "0d14ec928fb33ea7a4aa1b56c3a1c5762b50dee5f176ed68754cfaac195d5786",
+          "Offsets": [
+            1672
+          ]
+        }
+      ],
+      "Defaults": {
+        "Grinding": 1.0,
+        "Impact": 1.0,
+        "Responsive": 1.0,
+        "Mechanical": 1.0,
+        "Engagement": 1.0,
+        "Consequences": 1.0
+      }
+    },
+    {
+      "Key": "GearboxEngagementGain",
+      "Label": "Maximum added engagement time",
+      "Group": "GearboxDamage",
+      "Min": 0,
+      "Max": 3,
+      "Unit": "seconds",
+      "Mode": "gearbox_damage",
+      "Allowed": [
+        "Engagement",
+        "Consequences"
+      ],
+      "Slots": [
+        {
+          "Patch": "Gearbox leaf helpers and unwind",
+          "BaseSHA256": "b2a7e080328132b6b074cb8de77507ca669d62abcc166a1674aa67b92662b8aa",
+          "Offsets": [
+            937,
+            1551
+          ]
+        },
+        {
+          "Patch": "Gearbox leaf helpers and unwind",
+          "BaseSHA256": "0d14ec928fb33ea7a4aa1b56c3a1c5762b50dee5f176ed68754cfaac195d5786",
+          "Offsets": [
+            937,
+            1551
+          ]
+        }
+      ],
+      "Defaults": {
+        "Engagement": 0.75,
+        "Consequences": 1.5
+      }
+    },
+    {
+      "Key": "GearboxRecovery",
+      "Label": "Minimum failed-shift recovery",
+      "Group": "GearboxDamage",
+      "Min": 0,
+      "Max": 5,
+      "Unit": "seconds",
+      "Mode": "gearbox_damage",
+      "Allowed": [
+        "Mechanical",
+        "Engagement",
+        "Consequences"
+      ],
+      "Slots": [
+        {
+          "Patch": "Shift result observation helper",
+          "BaseSHA256": "5963d381c5f2ddbb2d5809eff06119ba826b54064671f3ce4f4f34264fe80b13",
+          "Offsets": [
+            21
+          ]
+        },
+        {
+          "Patch": "Shift result observation helper",
+          "BaseSHA256": "f008635a31ee865aaaac0c3583159330b34f361102fe9c8f8eb9c5334c10f9e4",
+          "Offsets": [
+            21
+          ]
+        },
+        {
+          "Patch": "Shift result observation helper",
+          "BaseSHA256": "9c6aee1d5738c47cc1800da2185a2a799008516e91da9f0b633d5bcb8e41c317",
+          "Offsets": [
+            21
+          ]
+        }
+      ],
+      "Defaults": {
+        "Mechanical": 0.25,
+        "Engagement": 0.25,
+        "Consequences": 1.0
+      }
+    },
+    {
+      "Key": "GearboxStressExposure",
+      "Label": "Coupled over-rev exposure",
+      "Group": "GearboxDamage",
+      "Min": 0,
+      "Max": 1,
+      "Unit": "s/rev",
+      "Mode": "gearbox_damage",
+      "Allowed": [
+        "Engagement",
+        "Consequences"
+      ],
+      "Slots": [
+        {
+          "Patch": "Progressive response leaf helpers",
+          "BaseSHA256": "0ea9c2ca5f8f4603422027fe4055cc46571448145230d60fb78b976910166268",
+          "Offsets": [
+            428
+          ]
+        },
+        {
+          "Patch": "Progressive response leaf helpers",
+          "BaseSHA256": "dfa9317430460b21db7c3b54a795a15850fe6d499dee9083d54e3a0e1b21b929",
+          "Offsets": [
+            428
+          ]
+        },
+        {
+          "Patch": "Progressive response leaf helpers",
+          "BaseSHA256": "175b40235c65a055abf5e77325a061b1144638a4d696d65e05c7413cd7c352e1",
+          "Offsets": [
+            428
+          ]
+        },
+        {
+          "Patch": "Progressive response leaf helpers",
+          "BaseSHA256": "45df77199e4bf272c50131a1e7b3b90ff9899f4d4870763bfe51ac477df9c2d0",
+          "Offsets": [
+            428
+          ]
+        }
+      ],
+      "Defaults": {
+        "Engagement": 0.02,
+        "Consequences": 0.5
+      }
+    },
+    {
+      "Key": "SuspensionGain",
+      "Label": "Damage-only steering deformation",
+      "Group": "WheelImpact",
+      "Min": 0,
+      "Max": 6,
+      "Unit": "x",
+      "Mode": "wheel_impact",
+      "Allowed": [
+        "Bent"
+      ],
+      "Slots": [
+        {
+          "Patch": "Suspension deformation helper",
+          "BaseSHA256": "0d99610a9ef36022ee3482ef622d3ce2ecf883b4b757112f70b4a10917869037",
+          "Offsets": [
+            96
+          ]
+        }
+      ],
+      "Defaults": {
+        "Bent": 3.0
+      }
+    },
+    {
+      "Key": "SuspensionLimit",
+      "Label": "Boosted deformation limit",
+      "Group": "WheelImpact",
+      "Min": 0,
+      "Max": 0.05,
+      "Unit": "native units",
+      "Mode": "wheel_impact",
+      "Allowed": [
+        "Bent"
+      ],
+      "Slots": [
+        {
+          "Patch": "Suspension deformation helper",
+          "BaseSHA256": "0d99610a9ef36022ee3482ef622d3ce2ecf883b4b757112f70b4a10917869037",
+          "Offsets": [
+            100
+          ]
+        }
+      ],
+      "Defaults": {
+        "Bent": 0.02
+      }
+    },
+    {
+      "Key": "GearboxProgression",
+      "Label": "Native gearbox wear affects shifting",
+      "Group": "GearboxDamage",
+      "Min": 0,
+      "Max": 1,
+      "Unit": "enabled",
+      "Mode": "gearbox_damage",
+      "Allowed": [
+        "Engagement",
+        "Consequences"
+      ],
+      "Defaults": {
+        "Engagement": 1,
+        "Consequences": 1
+      },
+      "Slots": [],
+      "Kind": "Switch"
+    },
+    {
+      "Key": "DifferentialWearRate",
+      "Label": "Differential zero-rate fallback",
+      "Group": "DrivetrainWear",
+      "Min": 0,
+      "Max": 0.0001,
+      "Unit": "native rate",
+      "Mode": "Always",
+      "Allowed": [],
+      "Defaults": {
+        "Enabled": 1e-06
+      },
+      "Slots": [],
+      "Kind": "Number"
+    },
+    {
+      "Key": "SuspensionAlignmentDegrees",
+      "Label": "Damage-sensitive added toe",
+      "Group": "WheelImpact",
+      "Min": 0,
+      "Max": 3,
+      "Unit": "degrees",
+      "Mode": "wheel_impact",
+      "Allowed": [
+        "Bent"
+      ],
+      "Defaults": {
+        "Bent": 1.5
+      },
+      "Slots": [],
+      "Kind": "Number"
+    },
+    {
+      "Key": "CoolingConsequences",
+      "Label": "Cooling damage and modeled overheating",
+      "Group": "PowerResponse",
+      "Min": 0,
+      "Max": 1,
+      "Unit": "enabled",
+      "Mode": "power_response",
+      "Allowed": [
+        "Progressive"
+      ],
+      "Defaults": {
+        "Progressive": 1
+      },
+      "Slots": [],
+      "Kind": "Switch"
+    },
+    {
+      "Key": "CoolingHealthThreshold",
+      "Label": "Cooling efficiency health divisor",
+      "Group": "PowerResponse",
+      "Min": 0.1,
+      "Max": 1,
+      "Unit": "fraction",
+      "Mode": "power_response",
+      "Allowed": [
+        "Progressive"
+      ],
+      "Defaults": {
+        "Progressive": 0.9
+      },
+      "Slots": [],
+      "Kind": "Number"
+    },
+    {
+      "Key": "CoolingStressRate",
+      "Label": "Modeled overheat wear exposure",
+      "Group": "PowerResponse",
+      "Min": 0,
+      "Max": 5,
+      "Unit": "x",
+      "Mode": "power_response",
+      "Allowed": [
+        "Progressive"
+      ],
+      "Defaults": {
+        "Progressive": 1
+      },
+      "Slots": [],
+      "Kind": "Number"
+    },
+    {
+      "Key": "HudDamageWarnings",
+      "Label": "Keep dashboard damage warnings in sync",
+      "Group": "GearboxDamage",
+      "Min": 0,
+      "Max": 1,
+      "Unit": "enabled",
+      "Mode": "gearbox_damage",
+      "Allowed": [
+        "Engagement",
+        "Consequences"
+      ],
+      "Defaults": {
+        "Engagement": 1,
+        "Consequences": 1
+      },
+      "Slots": [],
+      "Kind": "Switch"
+    },
+    {
+      "Key": "SuspensionCamberDegrees",
+      "Label": "Damage-sensitive added camber",
+      "Group": "WheelImpact",
+      "Min": 0,
+      "Max": 5,
+      "Unit": "degrees",
+      "Mode": "wheel_impact",
+      "Allowed": [
+        "Bent"
+      ],
+      "Defaults": {
+        "Bent": 2.5
+      },
+      "Slots": [],
+      "Kind": "Number"
+    },
+    {
+      "Key": "EngineUseWearScale",
+      "Label": "Routine engine-use wear",
+      "Group": "PowerResponse",
+      "Min": 0,
+      "Max": 2,
+      "Unit": "x native use wear",
+      "Mode": "power_response",
+      "Allowed": [
+        "Progressive"
+      ],
+      "Defaults": {
+        "Progressive": 1
+      },
+      "Slots": [],
+      "Kind": "Number"
+    }
+  ]
+}
